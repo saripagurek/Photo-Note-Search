@@ -1,1 +1,12 @@
 <h1>Example App: Home</h1>
+
+<form method='post' action='upload' enctype="multipart/form-data">
+  <input type='file' name='fileUploaded'>
+  <input type='submit'>
+</form>
+
+<div class="image">
+  {{#each filenames}}
+  <img src="images/{{this}}">
+  {{/each}}
+</div>
