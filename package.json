@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "GOOGLE_APPLICATION_CREDENTIALS=\"./Photo Note Search-2ee4f120c4a0.json\" nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/vision": "^2.3.7",
     "connect-busboy": "^0.0.2",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",

@@ -5,8 +5,19 @@
   <input type='submit'>
 </form>
 
+<div>
+  <input type='text' placeholder="Search" id='query'>
+  <input type='submit' id='search'>
+</div>
+<script>
+  document.getElementById('search').addEventListener('click', ()=>{
+    const query = document.getElementById('query').value
+    window.location.href = '/search/' + query
+  });
+</script>
+
 <div class="image">
   {{#each filenames}}
-  <img src="images/{{this}}">
+  <img src="images/{{url}}">
   {{/each}}
 </div>

@@ -1,0 +1,14 @@
+<h1>Example App: Search</h1>
+
+<form method='post' action='upload' enctype="multipart/form-data">
+  <input type='file' name='fileUploaded'>
+  <input type='submit'>
+</form>
+
+<h2>{{query}}</h2>
+
+<div class="image">
+  {{#each filenames}}
+  <img src="/images/{{url}}">
+  {{/each}}
+</div>
